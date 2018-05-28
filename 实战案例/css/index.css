@@ -346,7 +346,10 @@ html{
 	height:384px;
 }
 #sp-main .s-c-img ul{
-	width:1000%;
+	width:1300%;
+	height:100%;
+	margin-left:0;
+	transition:margin-left .5s;
 }
 #sp-main .s-c-img ul li{
 	position:relative;
@@ -355,6 +358,10 @@ html{
 	height:100%;
 	margin-right:40px;
 	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position: top center;
+	background-size:cover;
+	background-color:#fff;
 }
 #sp-main .s-c-img .txt{
 	position:absolute;
