@@ -649,9 +649,20 @@ html{
 	color:#fff;
 }
 #w-main .w-m-c-works{
+	position:relative;
 	width:100%;
 	height:760px;
 	margin-top:60px;
+}
+#w-main .w-m-c-works ul{
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+
+}
+#w-main .w-m-c-works ul.on{
+	display:block;
 }
 #w-main .w-m-c-works ul.m1 > li{
 	overflow:hidden;

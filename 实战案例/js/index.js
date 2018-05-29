@@ -30,7 +30,7 @@ $(function(){
 
     })();
 
-
+    //讲师轮播
     ;(function(){
         var length = data.length;
         var $btn  = $('#sp-main .s-c-arrow  p'),
@@ -79,6 +79,19 @@ $(function(){
         }
     })();
 
+    //选项卡切换
+    ;(function(){
+        var $btn = $('#works .w-m-c-tab ul li'),
+            $ul = $('#w-main .w-m-c-works ul'),
+            num = 0;
+        $btn.click(function(){
+            $ul.eq(num).fadeOut();
+            $btn.eq(num).removeClass("on");
+            num = $(this).index();
+            $ul.eq(num).fadeIn();
+            $btn.eq(num).addClass("on");
+        });
+    })();
 });
 
 
